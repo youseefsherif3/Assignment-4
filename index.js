@@ -17,7 +17,6 @@ function writeUsers(users) {
   fs.writeFileSync(usersPath, JSON.stringify(users), "utf-8");
 }
 
-// Middleware to parse JSON bodies
 app.use(express.json());
 
 // 1. Create an API that adds a new user to your users stored in a JSON file. (ensure that the email of the new user doesn’t exist before)
